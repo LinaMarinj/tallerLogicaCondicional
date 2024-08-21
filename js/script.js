@@ -43,7 +43,7 @@ if (numero % 2 == 0) {
 descuento.
 3. Si el total es menor o igual a 100, muestra el total sin descuento. */
 
-let totalCompra = parseInt(prompt("Ingresa el total de la compra: "));
+/* let totalCompra = parseInt(prompt("Ingresa el total de la compra: "));
 const descuento = totalCompra * 0.1;
 
 if (totalCompra > 100) {
@@ -55,3 +55,26 @@ if (totalCompra > 100) {
       totalCompra
   );
 }
+   */
+
+/* Ejercicio 5: Comparar Dos Números
+1. Solicita al usuario que ingrese dos números.
+2. Compara ambos números e imprime cuál es mayor o si son iguales.  */
+
+
+let numeroUno = parseInt(prompt("Hola, ingresa un número: "));
+let numeroDos = parseInt(prompt("Ingresa un segundo número"));
+
+if(numeroUno > numeroDos){
+    alert("El número " + numeroUno + " es mayor");
+}
+else if(numeroDos > numeroUno){
+alert("El número " + numeroDos + " es mayor");
+}
+
+else{
+    alert("los dos números son iguales");
+}
+ 
+
+

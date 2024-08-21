@@ -100,7 +100,7 @@ o Si la nota es mayor o igual a 70, muestra "Bueno".
 o Si la nota es mayor o igual a 50, muestra "Regular".
 o Si la nota es menor a 50, muestra "Insuficiente".  */
 
-
+/* 
 let nota = parseInt(prompt("Hola, ingresa una nota entre 0 y 100: "));
 
 if (nota >= 90) {
@@ -111,4 +111,33 @@ if (nota >= 90) {
     alert("Regular");
   } else {
     alert("Insuficiente");
-  }
+  } */
+
+/* Ejercicio 8: Elección de Menú
+ 1. Solicita al usuario que elija una opción de menú: 1 para "Pizza", 2 para "Hamburguesa", 3 para "Tacos". 
+ 2. Usa un switch para mostrar el plato seleccionado
+ 3. Si la opción no es válida, muestra "Opción no válida".
+ */
+
+let eleccionMenu = parseInt(
+  prompt(
+    "Hola, Elige una opcción del menú:\n 1. Pizza \n 2. Hamburguesa \n 3. Tacos \n"
+  )
+);
+
+switch (eleccionMenu) {
+  case 1:
+    alert("Seleccionaste: Pizza");
+    break;
+
+  case 2:
+    alert("Seleccionaste: Hamburguesa");
+    break;
+
+  case 3:
+    alert("Seleccionaste: Tacos");
+    break;
+
+  default:
+    alert("Opción invalida :( ");
+}

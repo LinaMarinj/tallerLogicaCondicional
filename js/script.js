@@ -80,7 +80,7 @@ if (numeroUno > numeroDos) {
   o Si la edad es entre 18 y 64, muestra "Eres un adulto".
   o Si la edad es mayor o igual a 65, muestra "Eres un adulto mayor".  */
 
-let edad = parseInt(prompt("Hola, porfavor ingresa tu edad: "));
+/* let edad = parseInt(prompt("Hola, porfavor ingresa tu edad: "));
 
 if (edad < 12) {
   alert("Eres un niño");
@@ -90,4 +90,25 @@ if (edad < 12) {
   alert("Eres un adulto");
 } else {
   alert("Eres un Eres un adulto mayor");
-}
+} */
+
+/*   Ejercicio 7: Clasificación de Notas
+1. Solicita al usuario que ingrese una nota entre 0 y 100.
+2. Muestra una clasificación basada en la nota:
+o Si la nota es mayor o igual a 90, muestra "Excelente".
+o Si la nota es mayor o igual a 70, muestra "Bueno".
+o Si la nota es mayor o igual a 50, muestra "Regular".
+o Si la nota es menor a 50, muestra "Insuficiente".  */
+
+
+let nota = parseInt(prompt("Hola, ingresa una nota entre 0 y 100: "));
+
+if (nota >= 90) {
+    alert("Excelente");
+  } else if (nota >= 70) {
+    alert("Bueno");
+  } else if (nota >= 50) {
+    alert("Regular");
+  } else {
+    alert("Insuficiente");
+  }

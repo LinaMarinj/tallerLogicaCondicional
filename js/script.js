@@ -36,3 +36,22 @@ if (numero % 2 == 0) {
   alert("El número " + numero + " es impar.");
 }
  */
+
+/* Ejercicio 4: Cálculo de Descuento
+1. Solicita al usuario que ingrese el total de una compra.
+2. Si el total es mayor a 100, aplica un descuento del 10% y muestra el total con
+descuento.
+3. Si el total es menor o igual a 100, muestra el total sin descuento. */
+
+let totalCompra = parseInt(prompt("Ingresa el total de la compra: "));
+const descuento = totalCompra * 0.1;
+
+if (totalCompra > 100) {
+  totalCompra = totalCompra - descuento;
+  alert("el total de la compra con descuento es: $" + totalCompra);
+} else {
+  alert(
+    "El total de la compra no aplica para el descuento, el valor es: $" +
+      totalCompra
+  );
+}

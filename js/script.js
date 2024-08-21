@@ -61,20 +61,33 @@ if (totalCompra > 100) {
 1. Solicita al usuario que ingrese dos números.
 2. Compara ambos números e imprime cuál es mayor o si son iguales.  */
 
-
-let numeroUno = parseInt(prompt("Hola, ingresa un número: "));
+/* let numeroUno = parseInt(prompt("Hola, ingresa un número: "));
 let numeroDos = parseInt(prompt("Ingresa un segundo número"));
 
-if(numeroUno > numeroDos){
-    alert("El número " + numeroUno + " es mayor");
-}
-else if(numeroDos > numeroUno){
-alert("El número " + numeroDos + " es mayor");
-}
+if (numeroUno > numeroDos) {
+  alert("El número " + numeroUno + " es mayor");
+} else if (numeroDos > numeroUno) {
+  alert("El número " + numeroDos + " es mayor");
+} else {
+  alert("los dos números son iguales");
+} */
 
-else{
-    alert("los dos números son iguales");
+/* Ejercicio 6: Clasificación por Edad
+  1. Solicita al usuario que ingrese su edad.
+  2. Muestra un mensaje basado en la clasificación de edades:
+  o Si la edad es menor a 12, muestra "Eres un niño".
+  o Si la edad es entre 12 y 17, muestra "Eres un adolescente".
+  o Si la edad es entre 18 y 64, muestra "Eres un adulto".
+  o Si la edad es mayor o igual a 65, muestra "Eres un adulto mayor".  */
+
+let edad = parseInt(prompt("Hola, porfavor ingresa tu edad: "));
+
+if (edad < 12) {
+  alert("Eres un niño");
+} else if (edad >= 12 && edad <= 17) {
+  alert("Eres un adolecente");
+} else if (edad >= 18 && edad <= 64) {
+  alert("Eres un adulto");
+} else {
+  alert("Eres un Eres un adulto mayor");
 }
- 
-
-

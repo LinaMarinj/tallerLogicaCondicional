@@ -149,7 +149,7 @@ switch (eleccionMenu) {
     3. Muestra el tipo de triángulo.
  */
 
-let lado1 = parseInt(prompt("Ingresa el primer lado del triángulo:"));
+/* let lado1 = parseInt(prompt("Ingresa el primer lado del triángulo:"));
 let lado2 = parseInt(prompt("Ingresa el segundo lado del triángulo:"));
 let lado3 = parseInt(prompt("Ingresa el tercer lado del triángulo:"));
 
@@ -159,4 +159,22 @@ if (lado1 === lado2 && lado2 === lado3) {
   alert("El triángulo es isósceles (dos lados son iguales).");
 } else {
   alert("El triángulo es escaleno (todos los lados son diferentes).");
-}
+} */
+
+/* 
+
+Ejercicio 10: Adivinar un Número
+1. Solicita al usuario que adivine un número entre 1 y 10.
+2. Si el número es correcto, muestra "¡Has acertado!".
+3. Si no, muestra "Intenta de nuevo". */
+
+let numeroIngresado;
+let numeroOculto = 5;
+do {
+  numeroIngresado = parseInt(prompt("Adivina un número del 1 al 10"));
+  if (numeroIngresado == numeroOculto) {
+    alert("¡Has acertado!");
+  } else {
+    prompt("Intenta de nuevo");
+  }
+} while (numeroIngresado != numeroOculto);

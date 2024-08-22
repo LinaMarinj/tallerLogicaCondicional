@@ -168,7 +168,7 @@ Ejercicio 10: Adivinar un Número
 2. Si el número es correcto, muestra "¡Has acertado!".
 3. Si no, muestra "Intenta de nuevo". */
 
-let numeroIngresado;
+/* let numeroIngresado;
 let numeroOculto = 5;
 do {
   numeroIngresado = parseInt(prompt("Adivina un número del 1 al 10"));
@@ -178,3 +178,28 @@ do {
     prompt("Intenta de nuevo");
   }
 } while (numeroIngresado != numeroOculto);
+ */
+
+
+
+/* 
+    Ejercicio 11: Cálculo del Precio Final
+Solicita al usuario que ingrese el precio base de un producto.
+1. Si el precio es mayor a 500, aplica un descuento del 15%.
+2. Si el precio es entre 300 y 500, aplica un descuento del 10%.
+3. Si el precio es menor a 300, aplica un descuento del 5%.
+4. Muestra el precio final después del descuento. */
+
+let precioBase = parseInt(prompt("Ingrese el precio base de un producto: "));
+
+const descuentoDelQuince = precioBase * 0.15;
+const descuentoDelDiez = precioBase * 0.10;
+const descuentoDelCinco = precioBase * 0.05;
+
+if (precioBase > 500) {
+  alert("El precio final con descuento del 15% es: " + (precioBase - descuentoDelQuince));
+} else if (precioBase >= 300 && precioBase <= 500) {
+  alert("El precio final con descuento del 10% es: " + (precioBase - descuentoDelDiez));
+} else if (precioBase < 300) {
+  alert("El precio final con descuento del 05% es: " + (precioBase - descuentoDelCinco));
+}

@@ -245,7 +245,7 @@ o Si la hora está entre 12 y 18, muestra "Buenas tardes".
 o Si la hora está entre 18 y 24 o entre 0 y 6, muestra "Buenas noches".  */
 
 
-let hora = parseInt(prompt("Ingresa una hora entre 0 a 23 :"));
+/* let hora = parseInt(prompt("Ingresa una hora entre 0 a 23 :"));
 
 if (hora >= 6 && hora < 12) {
     alert("Buenos días");
@@ -253,4 +253,30 @@ if (hora >= 6 && hora < 12) {
     alert("Buenas tardes");
 } else if ((hora >= 18 && hora <= 23) || (hora >= 0 && hora < 6)) {
     alert("Buenas noches");
+} */
+
+
+
+/* Ejercicio 15: Clasificación de Masa Corporal
+Solicita al usuario que ingrese su peso y altura.
+1. Calcula el IMC usando la fórmula: IMC = peso / altura^2.
+2. Clasifica el IMC en las siguientes categorías:
+o Si el IMC es menor a 18.5, muestra "Bajo peso".
+o Si el IMC está entre 18.5 y 24.9, muestra "Peso normal".
+o Si el IMC está entre 25 y 29.9, muestra "Sobrepeso".  */
+
+
+let peso = parseFloat(prompt("Ingresa tu peso en kilogramos:"));
+let altura = parseFloat(prompt("Ingresa tu altura en metros:"));
+
+let imc = peso / (altura * altura);
+
+if (imc < 18.5) {
+    alert("Bajo peso");
+} else if (imc >= 18.5 && imc < 25) {
+    alert("Peso normal");
+} else if (imc >= 25 && imc < 30) {
+    alert("Sobrepeso");
+} else {
+    alert("Obesidad");
 }

@@ -119,7 +119,7 @@ if (nota >= 90) {
  3. Si la opción no es válida, muestra "Opción no válida".
  */
 
-let eleccionMenu = parseInt(
+/* let eleccionMenu = parseInt(
   prompt(
     "Hola, Elige una opcción del menú:\n 1. Pizza \n 2. Hamburguesa \n 3. Tacos \n"
   )
@@ -140,4 +140,23 @@ switch (eleccionMenu) {
 
   default:
     alert("Opción invalida :( ");
+} */
+
+/*   Ejercicio 9: Tipo de Triángulo
+    1. Solicita al usuario que ingrese los tres lados de un triángulo.
+    2. Verifica si el triángulo es equilátero (todos los lados iguales), isósceles (dos
+    lados iguales), o escaleno (todos los lados diferentes).
+    3. Muestra el tipo de triángulo.
+ */
+
+let lado1 = parseInt(prompt("Ingresa el primer lado del triángulo:"));
+let lado2 = parseInt(prompt("Ingresa el segundo lado del triángulo:"));
+let lado3 = parseInt(prompt("Ingresa el tercer lado del triángulo:"));
+
+if (lado1 === lado2 && lado2 === lado3) {
+  alert("El triángulo es equilátero (todos los lados son iguales).");
+} else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+  alert("El triángulo es isósceles (dos lados son iguales).");
+} else {
+  alert("El triángulo es escaleno (todos los lados son diferentes).");
 }

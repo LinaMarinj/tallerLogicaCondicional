@@ -226,11 +226,31 @@ Solicita al usuario que ingrese un nombre de usuario y una contraseña.
 2. Si no, muestra "Acceso denegado". 
  */
 
-let usuario = prompt("Ingresa tu nombre de usuario:");
+/* let usuario = prompt("Ingresa tu nombre de usuario:");
 let contrasena = prompt("Ingresa tu contraseña:");
 
 if (usuario === "admin" && contrasena === "1234") {
   alert("Acceso concedido");
 } else {
   alert("Acceso denegado");
+} */
+
+
+/* 
+Ejercicio 14: Determinar Horario del Día
+1. Solicita al usuario que ingrese una hora (solo el número de la hora, de 0 a 23).
+2. Muestra un mensaje según la hora:
+o Si la hora está entre 6 y 12, muestra "Buenos días".
+o Si la hora está entre 12 y 18, muestra "Buenas tardes".
+o Si la hora está entre 18 y 24 o entre 0 y 6, muestra "Buenas noches".  */
+
+
+let hora = parseInt(prompt("Ingresa una hora entre 0 a 23 :"));
+
+if (hora >= 6 && hora < 12) {
+    alert("Buenos días");
+} else if (hora >= 12 && hora < 18) {
+    alert("Buenas tardes");
+} else if ((hora >= 18 && hora <= 23) || (hora >= 0 && hora < 6)) {
+    alert("Buenas noches");
 }

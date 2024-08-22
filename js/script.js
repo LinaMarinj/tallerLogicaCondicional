@@ -190,7 +190,7 @@ Solicita al usuario que ingrese el precio base de un producto.
 3. Si el precio es menor a 300, aplica un descuento del 5%.
 4. Muestra el precio final después del descuento. */
 
-let precioBase = parseInt(prompt("Ingrese el precio base de un producto: "));
+/* let precioBase = parseInt(prompt("Ingrese el precio base de un producto: "));
 
 const descuentoDelQuince = precioBase * 0.15;
 const descuentoDelDiez = precioBase * 0.10;
@@ -202,4 +202,23 @@ if (precioBase > 500) {
   alert("El precio final con descuento del 10% es: " + (precioBase - descuentoDelDiez));
 } else if (precioBase < 300) {
   alert("El precio final con descuento del 05% es: " + (precioBase - descuentoDelCinco));
+} */
+
+
+/* Ejercicio 12: Verificar el Año Bisiesto
+ Solicita al usuario que ingrese un año.
+1.	Usa las siguientes reglas para determinar si el año es bisiesto:
+
+Si el año es divisible por 4 pero no por 100, o es divisible por 400, es bisiesto.
+
+ 2. Muestra por consola si el año es bisiesto o no bisiesto. */
+
+
+  let year = parseInt(prompt("Ingresa un año:"));
+
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    alert("El año " + year + " es bisiesto.");
+} else {
+    alert("El año " + year + " no es bisiesto.");
 }
+

@@ -180,8 +180,6 @@ do {
 } while (numeroIngresado != numeroOculto);
  */
 
-
-
 /* 
     Ejercicio 11: Cálculo del Precio Final
 Solicita al usuario que ingrese el precio base de un producto.
@@ -204,7 +202,6 @@ if (precioBase > 500) {
   alert("El precio final con descuento del 05% es: " + (precioBase - descuentoDelCinco));
 } */
 
-
 /* Ejercicio 12: Verificar el Año Bisiesto
  Solicita al usuario que ingrese un año.
 1.	Usa las siguientes reglas para determinar si el año es bisiesto:
@@ -213,12 +210,27 @@ Si el año es divisible por 4 pero no por 100, o es divisible por 400, es bisies
 
  2. Muestra por consola si el año es bisiesto o no bisiesto. */
 
-
-  let year = parseInt(prompt("Ingresa un año:"));
+/* let year = parseInt(prompt("Ingresa un año:"));
 
 if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    alert("El año " + year + " es bisiesto.");
+  alert("El año " + year + " es bisiesto.");
 } else {
-    alert("El año " + year + " no es bisiesto.");
-}
+  alert("El año " + year + " no es bisiesto.");
+} */
 
+
+/* Ejercicio 13: Autenticación de Usuario
+Solicita al usuario que ingrese un nombre de usuario y una contraseña.
+1. Si el nombre de usuario es "admin" y la contraseña es "1234", muestra
+"Acceso concedido".
+2. Si no, muestra "Acceso denegado". 
+ */
+
+let usuario = prompt("Ingresa tu nombre de usuario:");
+let contrasena = prompt("Ingresa tu contraseña:");
+
+if (usuario === "admin" && contrasena === "1234") {
+  alert("Acceso concedido");
+} else {
+  alert("Acceso denegado");
+}

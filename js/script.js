@@ -3,12 +3,12 @@
 2. Si la edad es mayor o igual a 18, muestra un mensaje que diga "Eres mayor de edad".
 3. Si no, muestra "Eres menor de edad". */
 
-/* let edad = prompt("Ingrese su edad: ");
+ let edad = prompt("Ingrese su edad: ");
 if (edad >= 18) {
   alert("Eres mayor de edad");
 } else {
   alert("Eres menor de edad");
-} */
+} 
 
 /*   Ejercicio 2: Número Positivo o Negativo
 1. Solicita al usuario que ingrese un número.
@@ -266,7 +266,7 @@ o Si el IMC está entre 18.5 y 24.9, muestra "Peso normal".
 o Si el IMC está entre 25 y 29.9, muestra "Sobrepeso".  */
 
 
-let peso = parseFloat(prompt("Ingresa tu peso en kilogramos:"));
+/* let peso = parseFloat(prompt("Ingresa tu peso en kilogramos:"));
 let altura = parseFloat(prompt("Ingresa tu altura en metros:"));
 
 let imc = peso / (altura * altura);
@@ -279,4 +279,4 @@ if (imc < 18.5) {
     alert("Sobrepeso");
 } else {
     alert("Obesidad");
-}
+} */
